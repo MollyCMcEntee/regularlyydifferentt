@@ -1,0 +1,493 @@
+@font-face {
+    font-family: "Marola";
+    src: url("https://fontsforyou.com/fonts/m/Marola.ttf");
+}
+.your-style {
+    font-family: "Marola";
+}
+
+@font-face {
+    font-family: "Facileblackssk";
+    src: url("https://fontsforyou.com/fonts/f/Facileblackssk.ttf");
+}
+.your-style {
+    font-family: "Facileblackssk";
+}
+
+@font-face {
+    font-family: "Berlins";
+    src: url("https://fontsforyou.com/fonts/b/Berlins.otf");
+}
+.your-style {
+    font-family: "Berlins";
+}
+
+@font-face {
+    font-family: "Ke$Hanimal2";
+    src: url("https://fontsforyou.com/fonts/k/Ke$Hanimal2.ttf");
+}
+.your-style {
+    font-family: "Ke$Hanimal2";
+}
+
+
+:root{
+    font-size: 62.5%;
+    --cream: #F0F0F0;
+    --somewhat-light: #D9D9D9;
+    --light-dark: #978d8d;
+    --medium-dark: #908585;
+    --darker: #716868;
+    --darkest: #474242;
+}
+
+h1{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    font-family: "Marola", serif;
+    font-size: 4rem;
+    color: var(--darker);
+}
+
+
+h2{
+    text-align: center;
+    font-family: "Facileblackssk", serif;
+    font-size: 1.8rem;
+    color: var(--darkest);
+}
+
+
+p{
+    text-align: center;
+    font-family: "Facileblackssk", serif;
+    font-size: 1.8rem;
+    color: var(--darker);
+}
+
+
+button, .logo {
+    background-color: var(--dark-blue);
+    border: none;
+    color: var(--darker);
+    font-family: 'Marola', sans-serif;
+    font-size: 4rem;
+    padding: 8px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+button:hover{
+    outline-color: var(--darkest);
+    outline-width: 3px;
+    outline-style: solid;
+    cursor: pointer;
+}
+
+
+nav menu li{
+    list-style:none;
+}
+
+nav menu{
+    display: flex;
+    justify-content:space-between;
+    margin: 16px;
+    align-items: center;
+    outline-color: var(--darkest);
+    outline-width: 2.5px;
+    outline-style: solid;
+    background-color: var(--somewhat-light);
+    font-family: "Facileblackssk", serif;
+    font-size: 14px;
+    padding: 40px 60px;
+    border-radius: 50px;
+    outline-color: #474242;
+    width:min-content;
+}
+
+
+
+.logo{
+    font-family: "Marola";
+    font-size: 3.2rem;
+    text-decoration: none;
+    color: var(--medium-dark);
+}
+
+/*Search Bar*/
+.topnav input[type=text] {
+    float: right;
+    background-color: #D9D9D9;
+    padding: 6px;
+    border:none;
+    margin-top: 2px;
+    margin-right: 16px;
+    font-family: "Facileblackssk";
+    font-size: 12px;
+    color:#908585;
+    border-radius: 3px;
+    outline-color: #474242;
+  }
+
+
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: var(--darkest);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+/* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: #474242;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+/* Top section */
+#top-section{
+    text-align: center;
+    display: block;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    justify-content: space-between;
+    position: relative;
+    padding: 12px 16px;
+    outline-color:#474242;
+    outline-width: 2px;
+    outline-style: solid;
+    border-radius: 20px;
+    border-color: #474242;
+    background-color: #d9d9d9;
+    width:min-content;
+}
+
+
+#top-section div{
+    padding: 30px;
+    width: 430px;
+}
+
+#toptop-section{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin: 30px 0px;
+    justify-content: space-around;
+    position: relative;
+}
+
+
+#toptop-section div{
+    padding: 30px;
+    width: 430px;
+}
+
+main{
+    width: 80%;
+    margin: auto;
+}
+
+img{
+    border-radius: 5px;
+}
+
+/*PICS*/
+
+#inspo-pics article {
+    position: relative;
+    margin: 0px 15px;
+}
+
+.inspo-pics-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    color:#D9D9D9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+#inspo-pics{
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 1300px) {#inspo-pics {overflow-x:scroll; justify-content:left}}
+
+.inspo-pics-overlay:hover {
+    opacity: 1;
+}
+
+h3{
+    margin:0px;
+    font-family: "Facileblackssk";
+    color:var(--darkest);
+}
+
+.inspo-pics-overlay p{
+    margin: 0px 30px;
+}
+
+#inspo-pics img{
+    width: 400px;
+    height: 300px;
+    object-fit:cover;
+}
+
+/*RD by Molly McEntee*/
+.lowerRD{
+    margin-top: 110px;
+    font-family: "Marola";
+    font-size: 40px;
+    color:#474242;
+}
+.lowerby{
+    font-family: "Facileblackssk";
+    font-size: 22px;
+    color:#474242;
+}
+.lowerMollyMcEntee{
+    font-family:"Berlins";
+    font-size: 38px;
+    color:#474242;
+}
+.adjust-line-height{
+    line-height: .5em;
+}
+
+/*Mission Statement*/
+.triangle-left{
+    size: 50px;
+    width:0;
+    height: 0;
+    border-top: 300px solid transparent;
+    border-left: 300px solid transparent;
+    border-bottom: 300px solid var(--darker);
+    position:static;
+    bottom:0;
+    right:0;
+    left: 45px;
+}
+
+
+/*Menu */
+.dropdown {
+    display: inline-block;
+    position: relative;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    overflow: auto;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .dropdown-content a {
+    display: block;
+    color: #000000;
+    padding: 5px;
+    text-decoration: none;
+  }
+  .dropdown-content a:hover {
+    color: #978d8d;
+    background-color: #F0F0F0;
+    background-color: var(--somewhat-light);
+    color: var(--cream);
+    border-radius: 5px;
+    border-color: #474242;
+
+  }
+
+
+
+a:visited {
+    text-decoration: none;
+    color:#474242;
+}
+
+/* Sticky footer position and size
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+  }
+  body {
+    /* Margin bottom by footer height */
+    margin-bottom: 300px;
+  }
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 300px;
+  }
+  
+  /* Taller footer on small screens */
+  @media (max-width: 567em) {
+      body {
+        margin-bottom: 700px;
+      }
+      .footer {
+        height: 450px;
+      }
+  }
+  
+  /* Sticky footer style and color
+  -------------------------------------------------- */
+  footer {
+    padding-top: 30px;
+    background-color: #d9d9d9;
+    color: #bbb;
+  }
+  
+  footer a {
+    color: #474242;
+    text-decoration:none;
+  }
+  
+  footer a:hover, footer a:focus {
+    color: #aaa;
+    text-decoration:none;
+    border-bottom:1px dotted #999;
+  }
+  
+  footer .form-control {
+      background-color: #474242;
+      box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+      border: none;
+      border-radius: 3px;
+      resize: none;
+      color: #d1d2d2;
+      padding: 0.7em 1em;
+  }
+  
+
+  /*Footer */
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    list-style: none;
+    padding: 3px;
+    background-color: #D9D9D9;
+    color: #474242;
+    font-family: "Facileblackssk", serif;
+}
+
+h5{
+    font-family: "Facileblackssk";
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+/*MENU PAGE*/
+
+#MENU{
+    text-align: center;
+    align-items: center;
+    margin: 60px 0px;
+    justify-content: space-around;
+    position: relative;
+    font-family: "Facileblackssk";
+}
+
+#actualmenutext{
+    font-family: "Facileblackssk";
+    color:#474242;
+    stroke: #908585;
+}
+
+#insidemenu{
+    padding: 20px 10px 10px 10px;
+    background-color: #d9d9d9;
+    border-radius: 100px;
+    outline-color: #474242;
+    justify-content:space-between;
+    margin: 0px;
+    align-items: center;
+    outline-color: var(--darkest);
+    outline-width: 2px;
+    outline-style: solid;
+    background-size: ;
+    font-family: "Facileblackssk", serif;
+}
+
+.exitbtn{
+    border: none;
+    color: var(#d9d9d9);
+    font-family: 'Marola', sans-serif;
+    font-size: 4rem;
+    padding: 8px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.exitbtn:hover{
+    outline-color: var(--darkest);
+    border-width: 4px 3px;
+    outline-width: 3px;
+    outline-style: solid;
+    cursor: pointer;
+}
+
+
+/* BRAND SUGGESTIONS */
+#para-section{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin: 60px 0px;
+    justify-content: space-around;
+    position: relative;
+    padding: 12px 16px;
+    outline-color:#474242;
+    outline-width: 2px;
+    border-radius: 20px;
+    background-color: #d9d9d9;
+}
+
+#para-section div{
+    padding: 30px;
+    width: 430px;
+}
